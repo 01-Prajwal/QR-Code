@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Lato&family=Open+Sans:wght@300&family=Oswald:wght@300&family=Outfit:wght@200&family=Poppins:wght@300&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body::before{  
+    background: #cddcea;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.card{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.img{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.qr-image{
+    width: 74%;
+    border-radius: 31px;
+}
+.container{
+    margin: 0 auto;
+    width: 31%;
+    border-radius: 24px;
+    border: none;
+    background-color: white;
+}
+h1,p{
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+}
+@media  screen and (max-width:840px){
+    h1,p{
+        font-size: 1rem;
+        min-width: 15rem;
+        
+    }
+    .qr-image{
+        width: 70%;
+    }
+    .container{
+        min-width: 20rem;
+    }
+}
